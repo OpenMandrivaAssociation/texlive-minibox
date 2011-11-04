@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/minibox
+# catalog-date 2009-05-06 13:59:23 +0200
+# catalog-license lppl
+# catalog-version 0.1
 Name:		texlive-minibox
 Version:	0.1
 Release:	1
@@ -45,6 +51,7 @@ of the longest line they contain.
 #- source
 %doc %{_texmfdistdir}/source/latex/minibox/minibox.ins
 %doc %{_texmfdistdir}/source/latex/minibox/minibox.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,3 +62,5 @@ of the longest line they contain.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
