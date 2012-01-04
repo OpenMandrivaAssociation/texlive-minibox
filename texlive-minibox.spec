@@ -6,7 +6,7 @@
 # catalog-version 0.1
 Name:		texlive-minibox
 Version:	0.1
-Release:	1
+Release:	2
 Summary:	A simple type of box for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/minibox
