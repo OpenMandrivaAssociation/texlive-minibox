@@ -1,12 +1,12 @@
-# revision 15878
+# revision 30914
 # category Package
 # catalog-ctan /macros/latex/contrib/minibox
-# catalog-date 2009-05-06 13:59:23 +0200
+# catalog-date 2013-06-21 10:16:10 +0200
 # catalog-license lppl
-# catalog-version 0.1
+# catalog-version 0.2a
 Name:		texlive-minibox
-Version:	0.1
-Release:	2
+Version:	0.2a
+Release:	1
 Summary:	A simple type of box for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/minibox
@@ -51,17 +51,3 @@ of the longest line they contain.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-2
-+ Revision: 754010
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
-+ Revision: 719035
-- texlive-minibox
-- texlive-minibox
-- texlive-minibox
-- texlive-minibox
-
