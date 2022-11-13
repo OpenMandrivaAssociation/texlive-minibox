@@ -1,19 +1,13 @@
-# revision 30914
-# category Package
-# catalog-ctan /macros/latex/contrib/minibox
-# catalog-date 2013-06-21 10:16:10 +0200
-# catalog-license lppl
-# catalog-version 0.2a
 Name:		texlive-minibox
-Version:	0.2a
-Release:	10
+Version:	30914
+Release:	1
 Summary:	A simple type of box for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/minibox
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minibox.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minibox.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minibox.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minibox.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minibox.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minibox.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ allow manual line breaks. The boxes shrink to the natural width
 of the longest line they contain.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -44,7 +38,8 @@ of the longest line they contain.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
