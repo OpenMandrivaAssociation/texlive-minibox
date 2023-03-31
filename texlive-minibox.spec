@@ -1,6 +1,6 @@
 Name:		texlive-minibox
 Version:	30914
-Release:	1
+Release:	2
 Summary:	A simple type of box for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/minibox
