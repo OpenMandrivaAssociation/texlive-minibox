@@ -3,7 +3,7 @@ Version:	30914
 Release:	2
 Summary:	A simple type of box for LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/minibox
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/minibox
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minibox.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minibox.doc.r%{version}.tar.xz
